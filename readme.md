@@ -1,3 +1,3 @@
 Aplikacja pogodowa
 CodersCrew 2019
-pierwszy commit
+pierwszy comm
