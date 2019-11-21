@@ -7,6 +7,8 @@ Bootstrap
 
 Autorzy:
 :man: Tomasz Jarosz
+
 :man: Mateusz Malara
-:man: Michał Gorgolewski 
+
+:man: Michał Gorgolewski
 
