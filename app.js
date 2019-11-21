@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
     let temperatureDescription = document.querySelector('.temperature-description');
     let temperatureDegree = document.querySelector('.temperature-degree');
     let locationTimezone = document.querySelector('.location-timezone');
-    let icon = document.querySelector('.icon');
+    let iconPlace = document.querySelector('.icon');
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(position => {
@@ -32,13 +32,26 @@ window.addEventListener('load', () => {
                     } = data.weather[0]
                     temperatureDegree.textContent = temp;
                     temperatureDescription.textContent = description;
-                    locationTimezone.textContent = `${data.name} ${country}`;
+                    locationTimezone.textContent = `${data.name} ${country} `;
+
+                    function addIcon() {
+                        const x = document.createElement("IMG");
+                        x.setAttribute("src", `http://openweathermap.org/img/wn/${icon}@2x.png`);
+                        x.setAttribute("width", "120");
+                        x.setAttribute("height", "120");
+                        x.setAttribute("alt", "Weather Icon");
+                        iconPlace.appendChild(x);
+                    }
+                    addIcon();
                 });
+
         });
 
     }
-});
+})
+//http://openweathermap.org/img/wn/${icon}@2x.png
+//http://openweathermap.org/img/wn/10d@2x.png
 // https://cors-anywhere.herokuapp.com/
 //342e58ac10157a7f0274028550e55fc5
 //api.openweathermap.org/data/2.5/weather?lat=35&lon=139
-//api.openweathermap.org/data/2.5/find?q=London&units=metric
+// api.openweathermap.org/data/2.5/find?q=London&units=metric
