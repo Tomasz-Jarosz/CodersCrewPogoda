@@ -45,9 +45,32 @@ window.addEventListener('load', () => {
                     addIcon();
                 });
 
+            function initMap() {
+                long = position.coords.longitude;
+                lat = position.coords.latitude;
+                // The location of Uluru
+                let myPosition = {
+                    lat: lat,
+                    lng: long
+                };
+                // The map, centered at Uluru
+                let map = new google.maps.Map(
+                    document.getElementById('map'), {
+                        zoom: 4,
+                        center: myPosition
+                    });
+                // The marker, positioned at Uluru
+                let marker = new google.maps.Marker({
+                    position: myPosition,
+                    map: map
+                });
+            }
+            initMap();
         });
 
     }
+
+
 })
 //http://openweathermap.org/img/wn/${icon}@2x.png
 //http://openweathermap.org/img/wn/10d@2x.png
