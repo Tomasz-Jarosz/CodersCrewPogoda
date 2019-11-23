@@ -5,3 +5,10 @@ Bootstrap Layout
 
 Bootstrap
 
+Autorzy:
+:man: Tomasz Jarosz
+
+:man: Mateusz Malara
+
+:man: Michał Gorgolewski
+
