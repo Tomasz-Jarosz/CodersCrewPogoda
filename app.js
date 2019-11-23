@@ -1,4 +1,4 @@
-window.addEventListener('load', () => {
+const displayLocalWeather = () => {
     let long;
     let lat;
     let temperatureDescription = document.querySelector('.temperature-description');
@@ -71,7 +71,7 @@ window.addEventListener('load', () => {
     }
 
 
-})
+}
 //http://openweathermap.org/img/wn/${icon}@2x.png
 //http://openweathermap.org/img/wn/10d@2x.png
 // https://cors-anywhere.herokuapp.com/
