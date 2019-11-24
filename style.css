@@ -70,6 +70,16 @@ body {
     font-size: 1.4rem;
 }
 
+.find-place-form {
+    padding-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.find-place-form-input {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 /* #map {
     height: 400px;
     The height is 400 pixels
@@ -112,4 +122,8 @@ div.search form {
 .search button:hover {
     background-color: rgb(153, 153, 153);
     color: white;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ae572bf1533759fc9c52c0fb4c625818fb373b8b

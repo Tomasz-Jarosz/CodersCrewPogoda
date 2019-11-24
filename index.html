@@ -42,10 +42,10 @@
     <!-- End Navigation -->
 
     <!-- Start Heading View -->
-    <div class="main-headline text-center">
-        <h1 class="uppercase">Welcome to MTM Weather Application</h1>
+    <div class="main-headline text-center justify-content-center align-items-center">
+        <h1 class="uppercase">Welcome to MTM Weather App</h1>
         <h3>Click the button below to check your local weather</h3>
-        <a id="local-weather-btn" onclick="displayLocalWeather()" class="btn btn-outline-light btn-lg uppercase" href="#">Display local weather</a> <!-- TODO display local weather -->
+        <a id="local-weather-btn" onclick="displayLocalWeather()" class="btn btn-outline-light btn-lg uppercase" href="#">Display local weather</a>
         
         <!-- Start Weather Info -->
         <div class="weather-info">
@@ -59,9 +59,25 @@
             <div class="temperature-description"></div>
         </div>
         <!-- End Weather Info -->
-    </div>
 
+        <form class="find-place-form col-sm-3">
+            <div class="form-group">
+                <!-- <label for="usr">Name:</label> -->
+                <input type="text" class="find-place-form-input form-control" id="city" placeholder="input city name">
+              </div>
+              <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+          </form>
+          <a id="search-place-weather-btn" onclick="displayExactPlaceWeather(city.value)" class="btn btn-outline-light btn-lg uppercase" href="#">Find city & Display weather</a>
+
+    </div>
     <!-- End Heading View -->
+
+            <!-- <div class="search">
+            <form>
+                <input type="text" placeholder="Wpisz miejscowość">
+                <button class="find"><i class="fas fa-search"></i> Szukaj</button>
+            </form>
+        </div> -->
 </div>
 <!-- End Home Section -->
 
@@ -90,13 +106,9 @@
     <!-- <h3>My Google Maps Demo</h3>
     <div id="map"></div> -->
 
-<!--
-    <div class="search">
-        <form>
-            <input type="text" placeholder="Wpisz miejscowość">
-            <button class="find"><i class="fas fa-search"></i> Szukaj</button>
-        </form>
-    </div>
+
+
+    <!--
     <h3>My Google Maps Demo</h3>
     <div id="map"></div>
 -->
