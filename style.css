@@ -1,5 +1,7 @@
 body {
     background-image: url(img/weather-desktop-2.jpg);
+    /* background-position: center; */
+    background-size: cover;
     font-family: sans-serif;
     color: #ffffff;
 }
