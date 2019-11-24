@@ -32,12 +32,12 @@ const displayExactPlaceWeather = (city) => {
                     let {
                         icon
                     } = data.weather[0]
-                    temperatureDegree.textContent = temp;
+                    temperatureDegree.textContent = `${Math.round(parseFloat(temp))}°C`;
                     temperatureDescription.textContent = description;
                     locationTimezone.textContent = `${data.name} ${country} `;
 
                     function addIcon() {
-                        const x = document.createElement("iconImg");
+                        const x = document.createElement("IMG");
                         x.setAttribute("src", `http://openweathermap.org/img/wn/${icon}@2x.png`);
                         x.setAttribute("width", "120");
                         x.setAttribute("height", "120");
@@ -112,7 +112,7 @@ const displayLocalWeather = () => {
                     let {
                         icon
                     } = data.weather[0]
-                    temperatureDegree.textContent = temp;
+                    temperatureDegree.textContent = `${Math.round(parseFloat(temp))}°C`;
                     temperatureDescription.textContent = description;
                     locationTimezone.textContent = `${data.name} ${country} `;
 
