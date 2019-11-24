@@ -38,7 +38,7 @@ const displayExactPlaceWeather = (city) => {
 
                     function addIcon() {
                         const x = document.createElement("IMG");
-                        x.setAttribute("src", `http://openweathermap.org/img/wn/${icon}@2x.png`);
+                        x.setAttribute("src", `https://openweathermap.org/img/wn/${icon}@2x.png`);
                         x.setAttribute("width", "120");
                         x.setAttribute("height", "120");
                         x.setAttribute("alt", "Weather Icon");
@@ -118,7 +118,7 @@ const displayLocalWeather = () => {
 
                     function addIcon() {
                         const x = document.createElement("IMG");
-                        x.setAttribute("src", `http://openweathermap.org/img/wn/${icon}@2x.png`);
+                        x.setAttribute("src", `https://openweathermap.org/img/wn/${icon}@2x.png`);
                         x.setAttribute("width", "120");
                         x.setAttribute("height", "120");
                         x.setAttribute("alt", "Weather Icon");
