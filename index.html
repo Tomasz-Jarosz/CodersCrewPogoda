@@ -5,119 +5,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTM-WeatherApp</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body data-spy="scroll" data-target="navbarResponsive">
 
-<!-- Start Home Section -->
-<div id="home">
+    <!-- Start Home Section -->
+    <div id="home">
 
-    <!-- Start Navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-        <a class="navbar-brand" href="#"><img src="img/mtm-weatherapp-better.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarResponsive">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#maps">Maps</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#forecast">Forecast</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <a class="navbar-brand" href="#"><img src="img/mtm-weatherapp-better.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#maps">Maps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#forecast">Forecast</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <!-- End Navigation -->
+
+        <!-- Start Heading View -->
+        <div class="main-headline text-center justify-content-center align-items-center">
+            <h1 class="uppercase">Welcome to MTM Weather App</h1>
+            <h3>Click the button below to check your local weather</h3>
+            <a id="local-weather-btn" onclick="displayLocalWeather()" class="btn btn-outline-light btn-lg uppercase"
+                href="#">Display local weather</a>
+
+            <!-- Start Weather Info -->
+            <div class="weather-info">
+                <div class="location">
+                    <h2 class="location-timezone"></h2>
+                </div>
+                <div class="temperature">
+                    <h2 class="temperature-degree"></h2>
+                </div>
+                <div class="icon"></div>
+                <div class="temperature-description"></div>
+            </div>
+            <!-- End Weather Info -->
+
+            <form class="find-place-form col-sm-3">
+                <div class="form-group">
+                    <!-- <label for="usr">Name:</label> -->
+                    <input type="text" class="find-place-form-input form-control" id="city"
+                        placeholder="input city name">
+                </div>
+                <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+            </form>
+            <a id="search-place-weather-btn" onclick="displayExactPlaceWeather(city.value)"
+                class="btn btn-outline-light btn-lg uppercase" href="#">Find city & Display weather</a>
 
         </div>
-    </nav>
+        <!-- End Heading View -->
 
-    <!-- End Navigation -->
-
-    <!-- Start Heading View -->
-    <div class="main-headline text-center justify-content-center align-items-center">
-        <h1 class="uppercase">Welcome to MTM Weather App</h1>
-        <h3>Click the button below to check your local weather</h3>
-        <a id="local-weather-btn" onclick="displayLocalWeather()" class="btn btn-outline-light btn-lg uppercase" href="#">Display local weather</a>
-        
-        <!-- Start Weather Info -->
-        <div class="weather-info">
-            <div class="location">
-                <h2 class="location-timezone"></h2>
-            </div>
-            <div class="temperature">
-                <h2 class="temperature-degree"></h2>
-            </div>
-            <div class="icon"></div>
-            <div class="temperature-description"></div>
-        </div>
-        <!-- End Weather Info -->
-
-        <form class="find-place-form col-sm-3">
-            <div class="form-group">
-                <!-- <label for="usr">Name:</label> -->
-                <input type="text" class="find-place-form-input form-control" id="city" placeholder="input city name">
-              </div>
-              <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-          </form>
-          <a id="search-place-weather-btn" onclick="displayExactPlaceWeather(city.value)" class="btn btn-outline-light btn-lg uppercase" href="#">Find city & Display weather</a>
-
-    </div>
-    <!-- End Heading View -->
-
-            <!-- <div class="search">
+        <!-- <div class="search">
             <form>
                 <input type="text" placeholder="Wpisz miejscowość">
                 <button class="find"><i class="fas fa-search"></i> Szukaj</button>
             </form>
         </div> -->
-</div>
-<!-- End Home Section -->
+    </div>
+    <!-- End Home Section -->
 
 
-<!-- Start Maps Section -->
-<div id="maps" class="offset">
+    <!-- Start Maps Section -->
+    <div id="maps" class="offset">
 
-</div>
-<!-- End Maps Section -->
-    
-
-<!-- Start Forecast Section -->
-<div id="forecast" class="offset">
-
-</div>
-<!-- End Forecast Section -->
-    
-
-<!-- Start Contact Section -->
-<div id="contact" class="offset">
-
-</div>
-<!-- End Contact Section -->
+    </div>
+    <!-- End Maps Section -->
 
 
-    <!-- <h3>My Google Maps Demo</h3>
-    <div id="map"></div> -->
+    <!-- Start Forecast Section -->
+    <div class="container text-center justify-content-center align-items-center">
+        <h3>Click the button below to check your future weather</h3>
+        <a id="local-weather-btn" onclick="displayFutureWeather()" class="btn btn-outline-light btn-lg uppercase"
+            href="#">Display future weather</a>
+        <div id="forecast" class="offset">
+            <div class="future-weather">
+                <div class="fw-location">
+                    <h2 class="fw-location-timezone">x</h2>
+                </div>
+                <div class="fw-temperature">
+                    <h2 class="fw-temperature-degree">x</h2>
+                </div>
+                <div class="fw-icon"></div>
+                <div class="fw-temperature-description">x</div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Forecast Section -->
 
 
+    <!-- Start Contact Section -->
+    <div id="contact" class="offset">
 
-    <!--
-    <h3>My Google Maps Demo</h3>
-    <div id="map"></div>
--->
+    </div>
+    <!-- End Contact Section -->
+
+
+    -->
+    <script src="fw.js"></script>
     <script src="app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiqotfyTuByC-aR6JXp7RWeuT2mAQvClY&callback=initMap">
-    </script> -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
 </body>
+
 </html>
