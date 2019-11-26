@@ -13,7 +13,7 @@ const displayExactPlaceWeather = (city) => {
     //         console.log(position);
     // long = position.coords.longitude;
     // lat = position.coords.latitude;
-    const api = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=pl&APPID=342e58ac10157a7f0274028550e55fc5`
+    const api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=pl&APPID=342e58ac10157a7f0274028550e55fc5`
     fetch(api)
         .then(response => {
             return response.json();
