@@ -12,7 +12,7 @@ const displayFutureWeather = () => {
             console.log(position);
             long = position.coords.longitude;
             lat = position.coords.latitude;
-            const secondApi = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&units=metric&lang=pl&APPID=342e58ac10157a7f0274028550e55fc5`;
+            const secondApi = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&units=metric&lang=pl&APPID=342e58ac10157a7f0274028550e55fc5`;
 
             fetch(secondApi)
                 .then(response => {
