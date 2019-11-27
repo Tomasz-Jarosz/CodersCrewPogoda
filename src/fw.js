@@ -1,3 +1,8 @@
+// import {
+//     myNewDate
+// } from './moment.js';
+
+// console.log(myNewDate);
 const displayFutureWeather = () => {
     let long;
     let lat;
@@ -41,12 +46,15 @@ const displayFutureWeather = () => {
                                 humidity
                             } = data.list[i].main
 
+
                             var tds = document.querySelectorAll('td');
 
+
                             function addElement() {
+
                                 tds[i].innerHTML = `Temperature: ${Math.round(parseFloat(temp))}°C, Weather:${description}, Pressure: ${pressure}Pa, Humidity: ${humidity}% `;
                                 const x = document.createElement("IMG");
-                                x.setAttribute("src", `http://openweathermap.org/img/wn/${icon}@2x.png`);
+                                x.setAttribute("src", `https://openweathermap.org/img/wn/${icon}@2x.png`);
                                 x.setAttribute("width", "120");
                                 x.setAttribute("height", "120");
                                 x.setAttribute("alt", "Weather Icon");
