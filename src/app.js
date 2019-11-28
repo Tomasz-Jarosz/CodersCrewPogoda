@@ -132,6 +132,9 @@ sPWB.addEventListener("click", function () {
     return displayExactPlaceWeather(inputCity);
 });
 
+
+
+
 //http://openweathermap.org/img/wn/${icon}@2x.png
 //http://openweathermap.org/img/wn/10d@2x.png
 // https://cors-anywhere.herokuapp.com/
