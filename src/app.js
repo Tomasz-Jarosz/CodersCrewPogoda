@@ -1,3 +1,12 @@
+// var coordinatesObject = 
+// {
+//   lat: position.coords.latitude,
+//   lng: position.coords.longitude
+// }
+// localStorage.setItem('coordinates', 
+// JSON.stringify(coordinatesObject));
+// let objFromLocalStorage = 
+// localStorage.getItem('coordinates');
 const displayExactPlaceWeather = (city) => {
     // let long;
     // let lat;
@@ -113,10 +122,15 @@ const displayLocalWeather = () => {
         })
     }
 }
-let cv = displayExactPlaceWeather(city.value);
-document.getElementById('local-weather-btn').addEventListener('click', displayLocalWeather);
-document.getElementById('search-place-weather-btn').addEventListener('click', displayExactPlaceWeather(cv));
 
+
+
+document.getElementById('local-weather-btn').addEventListener('click', displayLocalWeather);
+let sPWB = document.getElementById('search-place-weather-btn')
+sPWB.addEventListener("click", function () {
+    let inputCity = document.querySelector('input').value;
+    return displayExactPlaceWeather(inputCity);
+});
 
 //http://openweathermap.org/img/wn/${icon}@2x.png
 //http://openweathermap.org/img/wn/10d@2x.png
