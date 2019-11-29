@@ -196,7 +196,7 @@ fieldset {
     width: 16.4em;
     border: none;
     background: var(--welcome-text-color);
-    color: #rgba(116, 106, 106, 0.6);
+    color: rgba(116, 106, 106, 0.6);
     margin: 0.5em 0;
     padding: 0.1em;
     font-size: 1.1em;
