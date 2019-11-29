@@ -155,12 +155,14 @@ div h3 {
 }
 
 #local-weather-btn {
-    margin-top: 5%;
+    margin-top: 2%;
     opacity: 0;
     animation-name: button1;
     animation-duration: 2s;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
+    font-size: 24px;
+    text-shadow: 3px 3px 7px black;
 }
 
 @keyframes button1 {
@@ -176,12 +178,21 @@ div h3 {
 .content-header {
     width: 100%;
 }
+#search-place-weather-btn {
+    text-shadow: 3px 3px 7px black;
+    margin-top: 10px;
+    font-size: 19px;
+}
 
 .content-header-text {
     padding: 0.2em 2em 0.2em;
     /* text-indent: 0em; */
     font-weight: 700;
     font-size: 1.7rem;
+}
+#local-weather-btn:hover,
+#search-place-weather-btn:hover {
+    text-shadow: none;
 }
 
 .content-info {
