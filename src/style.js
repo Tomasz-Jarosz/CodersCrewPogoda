@@ -1,5 +1,5 @@
 let footerChanges = document.getElementById('footer');
-footerChanges.setAttribute("style", "color: white", "fontFamily: sansSerif", "textAlign: center");
+// footerChanges.setAttribute("style", "color: white", "fontFamily: sansSerif", "textAlign: center");
 // Lepiej niech style będą rozdzielone, bo aż oczy bolą jak za dużo w linii.
 
 footerChanges.style.fontSize = "20px";
