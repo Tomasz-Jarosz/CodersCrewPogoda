@@ -118,7 +118,7 @@ body {
 .content-header {
     width: 100%;
     /* background-color: #fafaff; */
-    background-color: rgba(116, 106, 106, 0.6);
+    /* background-color: rgba(116, 106, 106, 0.6); */
 }
 
 .content-header-text {
@@ -135,11 +135,11 @@ body {
     margin-right: auto;
     margin-bottom: 2em;
     /* background-color: #fff; */
-    background-color: rgba(116, 106, 106, 0.6);    
+    /* background-color: rgba(116, 106, 106, 0.6);     */
     display: flex;
-    -webkit-box-shadow: 0.5em 0.5em 0.5em rgba(116, 106, 106, 0.6); 
+    /* -webkit-box-shadow: 0.5em 0.5em 0.5em rgba(116, 106, 106, 0.6); 
     -moz-box-shadow:    0.5em 0.5em 0.5em rgba(116, 106, 106, 0.6);
-    box-shadow:         0.5em 0.5em 0.5em rgba(116, 106, 106, 0.6); 
+    box-shadow:         0.5em 0.5em 0.5em rgba(116, 106, 106, 0.6);  */
 }
 
 .content-info-left {
@@ -196,7 +196,7 @@ fieldset {
     width: 16.4em;
     border: none;
     background: var(--welcome-text-color);
-    color: rgba(116, 106, 106, 0.6);
+    color: rgba(16, 6, 6, 0.6);
     margin: 0.5em 0;
     padding: 0.1em;
     font-size: 1.1em;
