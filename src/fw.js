@@ -1,16 +1,12 @@
 // import {
-//     myNewDate
+//     myNewDate,
+//     changeDate
 // } from './moment.js';
 
 // console.log(myNewDate);
 const displayFutureWeather = () => {
     let long;
     let lat;
-    let cells = document.querySelectorAll('td');
-    // let fwTemperatureDescription = document.querySelector('.fw-temperature-description');
-    // let fwLocationTimezone = document.querySelector('.fw-location-timezone');
-    // let fwIconPlace = document.querySelector('.fw-icon');
-    // let fwTemperatureDegree = document.querySelector('.fw-temperature-degree');
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(position => {
@@ -25,7 +21,22 @@ const displayFutureWeather = () => {
                 })
                 .then(data => {
                         console.log(data);
-                        for (i = 0; i < data.list.length; i++) {
+                        for (let i = 0; i < (data.length / 5); i++) {
+                            let {
+                                dt
+                            } = data.list[i]
+
+                            var xHour = document.querySelectorAll('.hour');
+
+                            function addDate() {
+                                var date = new Date((dt - 3600) * 1000)
+                                var hours = date.getHours();
+                                var minutes = "0" + date.getMinutes();
+                                xHour[i].innerText = `${hours}:${minutes.substr(-2)}`;
+                            }
+                            addDate();
+                        }
+                        for (let i = 0; i < data.list.length; i++) {
 
                             let {
                                 temp
@@ -33,9 +44,7 @@ const displayFutureWeather = () => {
                             let {
                                 description
                             } = data.list[i].weather[0];
-                            // let {
-                            //     country
-                            // } = data.list[i].sys;
+
                             let {
                                 icon
                             } = data.list[i].weather[0]
@@ -45,6 +54,7 @@ const displayFutureWeather = () => {
                             let {
                                 humidity
                             } = data.list[i].main
+
 
 
                             var tds = document.querySelectorAll('td');

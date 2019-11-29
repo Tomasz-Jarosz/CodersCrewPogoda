@@ -7,6 +7,9 @@
 // JSON.stringify(coordinatesObject));
 // let objFromLocalStorage = 
 // localStorage.getItem('coordinates');
+// import {
+//     myNewDate
+// } from './moment.js';
 const displayExactPlaceWeather = (city) => {
     // let long;
     // let lat;
@@ -97,7 +100,7 @@ const displayLocalWeather = () => {
                     } = data.sys;
                     let {
                         icon
-                    } = data.weather[0]
+                    } = data.weather[0];
                     temperatureDegree.textContent = `${Math.round(parseFloat(temp))}°C`;
                     temperatureDescription.textContent = description;
                     locationTimezone.textContent = `${data.name} ${country} `;
