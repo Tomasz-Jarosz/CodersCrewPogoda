@@ -52,10 +52,6 @@ body {
     padding-bottom: 1.5rem;
 }
 
-#local-weather-btn {
-    margin-top: 5%;
-}
-
 .uppercase {
     text-transform: uppercase;
 }
@@ -108,6 +104,77 @@ body {
     border-color: rgba(116, 106, 106, 0.8);
     background-color: silver;
 }
+
+nav i.animated {
+    font-size: 35px;
+    padding-left: 45vw;
+    /* animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+}
+
+/* @keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+} */
+
+h1.uppercase {
+    position: relative;
+    animation: welcome;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes welcome {
+    0% {
+        top: -250px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+div h3 {
+    position: relative;
+    animation-name: press;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes press {
+    0% {
+        left: -1000px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+#local-weather-btn {
+    margin-top: 5%;
+    opacity: 0;
+    animation-name: button1;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button1 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
 
 /* #map {
     height: 400px;
