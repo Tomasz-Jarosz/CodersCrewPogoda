@@ -105,8 +105,129 @@ body {
 }
 
 .table-color {
-    border-color: rgba(116, 106, 106, 0.8);
-    background-color: silver;
+    border-color: rgba(116, 106, 106, 0);
+    background-color:  rgba(116, 106, 106, 0.6);
+}
+
+.table-no-border {
+    border-color: rgba(100, 100, 255, 0);
+}
+
+
+
+.content-header {
+    width: 100%;
+    /* background-color: #fafaff; */
+    background-color: rgba(116, 106, 106, 0.6);
+}
+
+.content-header-text {
+    padding: 1em 2em 0.2em;
+    text-indent: 5em;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.content-info {
+    width: 94%;
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    /* background-color: #fff; */
+    background-color: rgba(116, 106, 106, 0.6);    
+    display: flex;
+    -webkit-box-shadow: 0.5em 0.5em 0.5em rgba(116, 106, 106, 0.6); 
+    -moz-box-shadow:    0.5em 0.5em 0.5em rgba(116, 106, 106, 0.6);
+    box-shadow:         0.5em 0.5em 0.5em rgba(116, 106, 106, 0.6); 
+}
+
+.content-info-left {
+    min-width: 33.33%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.contact-form {
+    min-width: 20em;
+    margin: 0 auto;
+}
+
+.contact-form form {
+    text-align: center;
+}
+
+input {
+    width: 18em;
+    margin: 0.5em 0;
+}
+
+textarea {
+    width: 18em;
+    min-height: 10em;
+    margin: 0.5em 0;
+}
+
+#contact {
+    /* background: #e8e8e8; */
+    background-color: rgba(116, 106, 106, 0.6);       
+    padding: 1em;
+    margin: 2em 0;
+    -webkit-box-shadow: 0.5em 0.5em 0.5em rgba(116, 106, 106, 0.6); 
+    -moz-box-shadow:    0.5em 0.5em 0.5em rgba(116, 106, 106, 0.6);
+    box-shadow:         0.5em 0.5em 0.5em rgba(116, 106, 106, 0.6); 
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0.5em 0;
+    width: 15em;
+    padding: 0.5;
+    text-align: center;
+}
+
+.content-info-right-contact {
+    margin: 0 auto;
+}
+
+#contact button {
+    cursor: pointer;
+    width: 16.4em;
+    border: none;
+    background: var(--welcome-text-color);
+    color: #rgba(116, 106, 106, 0.6);
+    margin: 0.5em 0;
+    padding: 0.1em;
+    font-size: 1.1em;
+}
+
+#contact button:hover {
+    background: var(--button-darker-end-color);
+    transition: background-color 0.4s ease-in-out;
+}
+
+footer {
+    margin: 0 auto;
+    background-color: rgba(116, 106, 106, 0.6);
+    text-align: center;
+    padding: 2em;
+}
+
+iframe {
+    width: 560px; 
+    height: 405px;
+    border:0;
+    margin: 1em;
+}
+
+
+
+
+@media (max-width: 767px) { 
+    body {
+    background-image: url(img/weather-desktop-small.jpg);
+    }
 }
 
 /* #map {
