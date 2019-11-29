@@ -68,7 +68,7 @@ const displayFutureWeather = () => {
 
                             function addElement() {}
 
-                            tds[i].innerHTML = `${i}Temperature: ${Math.round(parseFloat(temp))}°C, Weather:${description}, Pressure: ${pressure}Pa, Humidity: ${humidity}% `;
+                            tds[i].innerHTML = `Temperature: ${Math.round(parseFloat(temp))}°C, Weather:${description}, Pressure: ${pressure}Pa, Humidity: ${humidity}% `;
                             const x = document.createElement("IMG");
                             x.setAttribute("src", `https://openweathermap.org/img/wn/${icon}@2x.png`);
                             x.setAttribute("width", "120");
