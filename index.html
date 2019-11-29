@@ -7,7 +7,6 @@
     <title>MTM-WeatherApp</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -25,7 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home"><i class="fas fa-home"></i> Home</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#maps">Maps</a>
@@ -98,24 +97,22 @@
                     <thead class="thead-dark">
                         <tr>
                             <th scope="col">Hour</th>
-                            <th scope="col">Day 1</th>
-                            <th scope="col">Day 2</th>
-                            <th scope="col">Day 3</th>
-                            <th scope="col">Day 4</th>
-                            <th scope="col">Day 5</th>
+                            <th scope="col" class='hour'>Hour 1</th>
+                            <th scope="col" class='hour'>Hour 2</th>
+                            <th scope="col" class='hour'>Hour 3</th>
+                            <th scope="col" class='hour'>Hour 4</th>
+                            <th scope="col" class='hour'>Hour 5</th>
+                            <th scope="col" class='hour'>Hour 6</th>
+                            <th scope="col" class='hour'>Hour 7</th>
+                            <th scope="col" class='hour'>Hour 8</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row" class='hour'>0<sup>00</sup></th>
+                            <th scope="row">0<sup>00</sup></th>
                             <td>Cell</td>
                             <td>Cell</td>
                             <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class='hour'>3<sup>00</sup></th>
                             <td>Cell</td>
                             <td>Cell</td>
                             <td>Cell</td>
@@ -123,15 +120,10 @@
                             <td>Cell</td>
                         </tr>
                         <tr>
-                            <th scope="row" class='hour'>6<sup>00</sup></th>
+                            <th scope="row">3<sup>00</sup></th>
                             <td>Cell</td>
                             <td>Cell</td>
                             <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class='hour'>9<sup>00</sup></th>
                             <td>Cell</td>
                             <td>Cell</td>
                             <td>Cell</td>
@@ -139,15 +131,10 @@
                             <td>Cell</td>
                         </tr>
                         <tr>
-                            <th scope="row" class='hour'>12<sup>00</sup></th>
+                            <th scope="row">6<sup>00</sup></th>
                             <td>Cell</td>
                             <td>Cell</td>
                             <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class='hour'>15<sup>00</sup></th>
                             <td>Cell</td>
                             <td>Cell</td>
                             <td>Cell</td>
@@ -155,7 +142,10 @@
                             <td>Cell</td>
                         </tr>
                         <tr>
-                            <th scope="row" class='hour'>18<sup>00</sup></th>
+                            <th scope="row">9<sup>00</sup></th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
                             <td>Cell</td>
                             <td>Cell</td>
                             <td>Cell</td>
@@ -163,13 +153,17 @@
                             <td>Cell</td>
                         </tr>
                         <tr>
-                            <th scope="row" class='hour'>21<sup>00</sup></th>
+                            <th scope="row">12<sup>00</sup></th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
                             <td>Cell</td>
                             <td>Cell</td>
                             <td>Cell</td>
                             <td>Cell</td>
                             <td>Cell</td>
                         </tr>
+
                     </tbody>
                 </table>
             </div>
@@ -189,9 +183,6 @@
         <footer id="footer">&copy; MTM Crew</footer>
         <script src="./src/style.js"></script>
         <!--End footer-->
-
-        <!--kit icons-->
-        <script src="https://kit.fontawesome.com/391b533b7b.js" crossorigin="anonymous"></script>
 
 
         <script src="./src/fw.js"></script>

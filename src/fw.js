@@ -21,22 +21,19 @@ const displayFutureWeather = () => {
                 })
                 .then(data => {
                         console.log(data);
-                        for (let i = 0; i < (data.length / 5); i++) {
-                            let {
-                                dt
-                            } = data.list[i]
+                        var xHour = document.querySelectorAll('.hour');
+                        var date = new Date();
+                        var hours = (Math.floor(date.getHours() / 3) * 3 + 3) % 24;
+                        var minutes = "00";
 
-                            var xHour = document.querySelectorAll('.hour');
 
-                            function addDate() {
-                                var date = new Date((dt - 3600) * 1000)
-                                var hours = date.getHours();
-                                var minutes = "0" + date.getMinutes();
-                                xHour[i].innerText = `${hours}:${minutes.substr(-2)}`;
-                            }
-                            addDate();
+                        for (let z = 0; z < 8; z++) {
+                            xHour[z].innerText = `${hours}:${minutes}`;
+                            hours += 3;
                         }
+
                         for (let i = 0; i < data.list.length; i++) {
+
 
                             let {
                                 temp
@@ -55,32 +52,35 @@ const displayFutureWeather = () => {
                                 humidity
                             } = data.list[i].main
 
-
-
                             var tds = document.querySelectorAll('td');
 
 
-                            function addElement() {
+                            function addElement() {}
 
-                                tds[i].innerHTML = `Temperature: ${Math.round(parseFloat(temp))}°C, Weather:${description}, Pressure: ${pressure}Pa, Humidity: ${humidity}% `;
-                                const x = document.createElement("IMG");
-                                x.setAttribute("src", `https://openweathermap.org/img/wn/${icon}@2x.png`);
-                                x.setAttribute("width", "120");
-                                x.setAttribute("height", "120");
-                                x.setAttribute("alt", "Weather Icon");
-                                let oldIcon = tds[i].Child;
-                                if (oldIcon == undefined)
-                                    tds[i].appendChild(x);
-                                else
-                                    tds[i].replaceChild(x, oldIcon);
-                            }
-                            addElement();
+                            tds[i].innerHTML = `${i}Temperature: ${Math.round(parseFloat(temp))}°C, Weather:${description}, Pressure: ${pressure}Pa, Humidity: ${humidity}% `;
+                            const x = document.createElement("IMG");
+                            x.setAttribute("src", `https://openweathermap.org/img/wn/${icon}@2x.png`);
+                            x.setAttribute("width", "120");
+                            x.setAttribute("height", "120");
+                            x.setAttribute("alt", "Weather Icon");
+                            let oldIcon = tds[i].Child;
+                            if (oldIcon == undefined)
+                                tds[i].appendChild(x);
+                            else
+                                tds[i].replaceChild(x, oldIcon);
 
-                        };
+                        }
+                        addElement();
+
+
+
+
+
                     }
 
 
                 )
+
         })
     }
 }
