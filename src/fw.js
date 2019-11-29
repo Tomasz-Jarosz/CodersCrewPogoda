@@ -32,6 +32,17 @@ const displayFutureWeather = () => {
                             hours += 3;
                         }
 
+
+                        const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+                        var xDay = document.querySelectorAll('.day');
+                        var date = new Date();
+                        var day = date.getDay();
+
+                        for (let z = 0; z < 5; z++) {
+                            xDay[z].innerText = hours == 24 ? `${dayNames[day]}` : `${dayNames[day]}\\${dayNames[(day+1)%7]}`;
+                            day = day == 6 ? 0 : ++day;
+                        }
+
                         for (let i = 0; i < data.list.length; i++) {
 
 

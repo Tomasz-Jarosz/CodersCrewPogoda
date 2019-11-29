@@ -7,19 +7,20 @@
 // JSON.stringify(coordinatesObject));
 // let objFromLocalStorage = 
 // localStorage.getItem('coordinates');
-// import {
-//     myNewDate
-// } from './moment.js';
+import {
+    myNewDate
+} from './moment.js';
+
 const displayExactPlaceWeather = (city) => {
-    // let long;
-    // let lat;
+    let long;
+    let lat;
     let temperatureDescription = document.querySelector('.temperature-description');
     let temperatureDegree = document.querySelector('.temperature-degree');
     let locationTimezone = document.querySelector('.location-timezone');
     let iconPlace = document.querySelector('.icon');
-    // let citi = document.getElementById
-    console.log(city);
+    let time = document.querySelector('.time-info');
 
+    time.textContent = `${myNewDate}`;
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(position => {
             console.log(position);
@@ -48,6 +49,7 @@ const displayExactPlaceWeather = (city) => {
                     temperatureDescription.textContent = description;
                     locationTimezone.textContent = `${data.name} ${country} `;
 
+
                     function addIcon() {
                         const x = document.createElement("IMG");
                         x.setAttribute("src", `http://openweathermap.org/img/wn/${icon}@2x.png`);
@@ -75,7 +77,8 @@ const displayLocalWeather = () => {
     let temperatureDegree = document.querySelector('.temperature-degree');
     let locationTimezone = document.querySelector('.location-timezone');
     let iconPlace = document.querySelector('.icon');
-
+    let time = document.querySelector('.time-info');
+    time.textContent = `${myNewDate}`;
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(position => {
