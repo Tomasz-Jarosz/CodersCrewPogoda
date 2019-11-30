@@ -301,7 +301,7 @@ iframe {
 
 @media (max-width: 767px) {
     body {
-        background-image: url(img/weather-desktop-small.jpg);
+        background-image: url(img/weather-desktop-small.png);
     }
 }
 
