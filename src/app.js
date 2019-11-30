@@ -1,12 +1,3 @@
-// var coordinatesObject = 
-// {
-//   lat: position.coords.latitude,
-//   lng: position.coords.longitude
-// }
-// localStorage.setItem('coordinates', 
-// JSON.stringify(coordinatesObject));
-// let objFromLocalStorage = 
-// localStorage.getItem('coordinates');
 import {
     myNewDate
 } from './moment.js';
@@ -130,20 +121,9 @@ const displayLocalWeather = () => {
 }
 
 
-
 document.getElementById('local-weather-btn').addEventListener('click', displayLocalWeather);
 let sPWB = document.getElementById('search-place-weather-btn')
 sPWB.addEventListener("click", function () {
     let inputCity = document.querySelector('input').value;
     return displayExactPlaceWeather(inputCity);
 });
-
-
-
-
-//http://openweathermap.org/img/wn/${icon}@2x.png
-//http://openweathermap.org/img/wn/10d@2x.png
-// https://cors-anywhere.herokuapp.com/
-//342e58ac10157a7f0274028550e55fc5
-//api.openweathermap.org/data/2.5/weather?lat=35&lon=139
-// api.openweathermap.org/data/2.5/find?q=London&units=metric

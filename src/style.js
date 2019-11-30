@@ -1,6 +1,6 @@
 let footerChanges = document.getElementById('footer');
-// footerChanges.setAttribute("style", "color: white", "fontFamily: sansSerif", "textAlign: center");
-// Lepiej niech style będą rozdzielone, bo aż oczy bolą jak za dużo w linii.
+
+footerChanges.setAttribute("style", "color: white");
 
 footerChanges.style.fontSize = "20px";
 footerChanges.style.wordSpacing = "5px";

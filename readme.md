@@ -13,4 +13,7 @@ Autorzy:
 
 :man: Michał Gorgolewski
 
-Nasza aplikacja pozwala sprawdzić warunki pogodowe zarówno w obecnej lokalizacji użytkownika, jak i wybranej przez niego miejscowości. 
+Nasza aplikacja pozwala użytkownikowi sprawdzić warunki pogodowe zarówno w jego lokalizacji, jak i dowolnej wybranej przez niego miejscowości.
+
+Oprócz obecnego stanu atmosferycznego aplikacja pokazuje prognozę pogody na najbliższe 5 dni co 3 godziny. 
+

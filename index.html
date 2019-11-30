@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nasza aplikacja pogodowa stworzona w ramach projektu na kursie CodersCamp">
     <title>MTM-WeatherApp</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/391b533b7b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -25,7 +28,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#home"><i class="fas fa-home domek"></i> Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#maps">Maps</a>
@@ -37,7 +40,6 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-
             </div>
         </nav>
 
@@ -75,162 +77,156 @@
                 weather</a>
 
         </div>
+
         <!-- End Heading View -->
 
-        <!-- <div class="search">
-            <form>
-                <input type="text" placeholder="Wpisz miejscowość">
-                <button class="find"><i class="fas fa-search"></i> Szukaj</button>
-            </form>
-        </div> -->
-    </div>
-    <!-- End Home Section -->
+        <!-- End Home Section -->
 
 
-    <!-- Start Maps Section -->
-    <div id="maps" class="offset">
+        <!-- Start Maps Section -->
+        <div id="maps" class="offset">
 
-        <!-- Start Forecast Section -->
-        <!-- <div id="forecast" class="offset"> -->
-        <div id="forecast">
+            <!-- Start Forecast Section -->
+            <div id="forecast">
 
-            <div class="table-responsive-lg">
-                <table class="table table-bordered table-hover table-color">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th scope="col">Hour</th>
-                            <th scope="col" class='hour'>Hour 1</th>
-                            <th scope="col" class='hour'>Hour 2</th>
-                            <th scope="col" class='hour'>Hour 3</th>
-                            <th scope="col" class='hour'>Hour 4</th>
-                            <th scope="col" class='hour'>Hour 5</th>
-                            <th scope="col" class='hour'>Hour 6</th>
-                            <th scope="col" class='hour'>Hour 7</th>
-                            <th scope="col" class='hour'>Hour 8</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row" class="day">0<sup>00</sup></th>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="day">3<sup>00</sup></th>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="day">6<sup>00</sup></th>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="day">9<sup>00</sup></th>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="day">12<sup>00</sup></th>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                        </tr>
+                <div class="table-responsive-lg">
+                    <table class="table table-bordered table-hover table-color">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Hour</th>
+                                <th scope="col" class='hour'>Hour 1</th>
+                                <th scope="col" class='hour'>Hour 2</th>
+                                <th scope="col" class='hour'>Hour 3</th>
+                                <th scope="col" class='hour'>Hour 4</th>
+                                <th scope="col" class='hour'>Hour 5</th>
+                                <th scope="col" class='hour'>Hour 6</th>
+                                <th scope="col" class='hour'>Hour 7</th>
+                                <th scope="col" class='hour'>Hour 8</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="day">0<sup>00</sup></th>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="day">3<sup>00</sup></th>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="day">6<sup>00</sup></th>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="day">9<sup>00</sup></th>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="day">12<sup>00</sup></th>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                            </tr>
 
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
-        <!-- End Forecast Section -->
+            <!-- End Forecast Section -->
 
-
-
-        <!-- Start Contact Section -->
-        <div id="contact" class="offset">
-            <div class="content-header">
-                <div class="content-header-text">Contact</div>
-            </div>
-            <div class="content-info">
-                <div class="content-info-left">
-                    <div class="content-info-left-text-contact">
-                        <div class="contact-form">
-                            <form id="contactform" action="" method="post">
-                                <h4>Send a message</h4>
-                                <fieldset>
-                                    <input placeholder="Your name" type="text" required>
-                                </fieldset>
-                                <fieldset>
-                                    <input placeholder="Your Email Address" type="email" required>
-                                </fieldset>
-                                <fieldset>
-                                    <textarea placeholder="Type here..." required></textarea>
-                                </fieldset>
-                                <fieldset>
-                                    <button name="submit" type="submit">Submit</button>
-                                </fieldset>
-                            </form>
+            <!-- Start Contact Section -->
+            <div id="contact" class="offset">
+                <div class="content-header">
+                    <div class="content-header-text">Contact</div>
+                </div>
+                <div class="content-info">
+                    <div class="content-info-left">
+                        <div class="content-info-left-text-contact">
+                            <div class="contact-form">
+                                <form id="contactform" action="" method="post">
+                                    <h4>Send a message</h4>
+                                    <fieldset>
+                                        <input placeholder="Your name" type="text" required>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input placeholder="Your Email Address" type="email" required>
+                                    </fieldset>
+                                    <fieldset>
+                                        <textarea placeholder="Type here..." required></textarea>
+                                    </fieldset>
+                                    <fieldset>
+                                        <button name="submit" type="submit">Submit</button>
+                                    </fieldset>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="content-info-right-contact">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6179.467675729014!2d17.023983813547208!3d51.08959507674172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc242505071b5%3A0x4d9e1f895ba0d29!2sCentrum%20Kszta%C5%82cenia%20Ustawicznego%20Uniwersytetu%20Ekonomicznego%20we%20Wroc%C5%82awiu!5e0!3m2!1spl!2spl!4v1575056399932!5m2!1spl!2spl"
-                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <div class="content-info-right-contact">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6179.467675729014!2d17.023983813547208!3d51.08959507674172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc242505071b5%3A0x4d9e1f895ba0d29!2sCentrum%20Kszta%C5%82cenia%20Ustawicznego%20Uniwersytetu%20Ekonomicznego%20we%20Wroc%C5%82awiu!5e0!3m2!1spl!2spl!4v1575056399932!5m2!1spl!2spl"
+                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- End Contact Section -->
+            <!-- End Contact Section -->
 
 
-        <!--Start footer-->
-        <footer id="footer">&copy; MTM Crew</footer>
-        <script src="./src/style.js"></script>
-        <!--End footer-->
+            <!--Start footer-->
+            <footer id="footer">&copy; MTM Crew</footer>
+            <script src="./src/style.js"></script>
+            <!--End footer-->
 
 
-        <!-- <script src="./src/fw.js"></script> -->
-        <!-- <script src="./src/app.js"></script> -->
-        <script src="./dist/bundle.js"></script>
-        <!-- <script src="./src/app.js"></script> -->
+            <!-- <script src="./src/fw.js"></script> -->
+            <!-- <script src="./src/app.js"></script> -->
+            <script src="./dist/bundle.js"></script>
+            <!-- <script src="./src/app.js"></script> -->
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-        </script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous">
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous">
+            </script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous">
+            </script>
 
 </body>
 
