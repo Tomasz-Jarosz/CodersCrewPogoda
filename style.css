@@ -2,8 +2,6 @@ body {
     background-image: url(img/weather-desktop-2.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    /* background-position: center; */
-    /* background-size: cover; */
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
     display: flex;
@@ -112,28 +110,50 @@ body {
 nav i.animated {
     font-size: 35px;
     padding-left: 45vw;
-    /* animation-name: spin;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; */
 }
-
-/* @keyframes spin {
-    100% {
-        transform: rotate(360deg);
-    }
-} */
 
 h1.uppercase {
     position: relative;
-    animation: welcome;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+    animation: welcome 1.25s forwards linear;
+    -webkit-animation: welcome 1.25s forwards linear;
+    -moz-animation: welcome 1.25s forwards linear;
 }
 
 @keyframes welcome {
     0% {
         top: -250px;
+    }
+
+    50% {
+        top: -125px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@-webkit-keyframes welcome {
+    0% {
+        top: -250px;
+    }
+
+    50% {
+        top: -125px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@-moz-keyframes welcome {
+    0% {
+        top: -250px;
+    }
+
+    50% {
+        top: -125px;
     }
 
     100% {
@@ -143,14 +163,70 @@ h1.uppercase {
 
 div h3 {
     position: relative;
-    animation-name: press;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+    animation: press 1.25s forwards linear;
+    -webkit-animation: press 1.25s forwards linear;
+    -moz-animation: press 1.25s forwards linear;
 }
 
 @keyframes press {
     0% {
         left: -1000px;
+    }
+
+    25% {
+        left: -750px;
+    }
+
+    50% {
+        left: -500px;
+    }
+
+    75% {
+        left: -250px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@-webkit-keyframes press {
+    0% {
+        left: -1000px;
+    }
+
+    25% {
+        left: -750px;
+    }
+
+    50% {
+        left: -500px;
+    }
+
+    75% {
+        left: -250px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@-moz-keyframes press {
+    0% {
+        left: -1000px;
+    }
+
+    25% {
+        left: -750px;
+    }
+
+    50% {
+        left: -500px;
+    }
+
+    75% {
+        left: -250px;
     }
 
     100% {
@@ -163,7 +239,7 @@ div h3 {
     opacity: 0;
     animation-name: button1;
     animation-duration: 2s;
-    animation-delay: 0.5s;
+    animation-delay: 0.25s;
     animation-fill-mode: forwards;
     font-size: 24px;
     text-shadow: 3px 3px 7px black;
@@ -191,7 +267,6 @@ div h3 {
 
 .content-header-text {
     padding: 0.2em 2em 0.2em;
-    /* text-indent: 0em; */
     font-weight: 700;
     font-size: 1.7rem;
 }
@@ -200,7 +275,6 @@ div h3 {
 #search-place-weather-btn:hover {
     text-shadow: none;
 }
-
 
 .domek {
     padding-right: 5px;
@@ -213,7 +287,6 @@ div h3 {
     margin-right: auto;
     margin-bottom: 2em;
     display: flex;
-
 }
 
 .content-info-left {
@@ -256,8 +329,6 @@ textarea {
     background-color: rgba(100, 106, 106, 0.6);
     padding: 1em;
     margin: 0;
-    /* margin-left: auto;
-    margin-right: auto; */
     width: 20em;
 }
 
@@ -309,11 +380,3 @@ iframe {
         background-image: url(img/weather-desktop-small.jpg);
     }
 }
-
-
-/* #map {
-    height: 400px;
-    The height is 400 pixels
-    width: 100%;
-} */
-/* The height is 400 pixels */
