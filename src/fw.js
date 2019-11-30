@@ -22,7 +22,7 @@ const displayFutureWeather = () => {
 
 
                     for (let z = 0; z < 8; z++) {
-                        xHour[z].innerText = `${hours}:${minutes}`;
+                        xHour[z].innerText = hours < 24?`${hours}:${minutes}` : `${hours % 24}:${minutes}`;
                         hours += 3;
                     }
 
