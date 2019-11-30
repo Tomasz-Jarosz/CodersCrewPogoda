@@ -201,6 +201,11 @@ div h3 {
     text-shadow: none;
 }
 
+
+.domek {
+    padding-right: 5px;
+}
+
 .content-info {
     width: 94%;
     padding: 1%;
