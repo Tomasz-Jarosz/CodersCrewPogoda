@@ -1,5 +1,5 @@
 let moment = require('moment');
-let myNewDate = moment(new Date()).format('MMMM Do YYYY, h:mm:ss a');
+let myNewDate = moment(new Date()).format('llll');
 export {
     myNewDate,
 };
